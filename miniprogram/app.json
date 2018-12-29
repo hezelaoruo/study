@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/scanCode/scanCode",
+    "pages/bookDetail/bookDetail",
+    "pages/blog/index",
+    "pages/list/index",
+    "pages/detail/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "私家书柜",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/index",
+        "text": "博客"
+      },
+      
+      {
+        "pagePath": "pages/blog/index",
+        "text": "发布"
+      },
+      {
+      "pagePath": "pages/index/index",
+      "text": "我的藏书"
+    },
+    {
+      "pagePath": "pages/scanCode/scanCode",
+      "text": "扫码加书"
+    }]
+  },
+  "cloud": true
+}

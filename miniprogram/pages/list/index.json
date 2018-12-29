@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "文章列表",
+  "usingComponents": {
+    "van-notice-bar": "../../vant/notice-bar/index",
+    "van-icon": "../../vant/icon/index",
+    "van-card": "../../vant/card/index",
+    "van-button": "../../vant/button/index"
+  }
+}

@@ -1,0 +1,43 @@
+<swiper
+  indicator-dots="false"
+  autoplay="false"
+  interval="5000"
+  duration="1000"
+  circular="true"
+>
+  <block wx:for="{{list}}">
+    <swiper-item>
+      <image src="{{item.cover}}" class="slide-image" width="100%" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<view>
+<van-notice-bar
+  mode="closeable"
+  text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
+/>
+
+</view>
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text}}</text>
+    <button bindtap="add">add line</button>
+    <button bindtap="remove">remove line</button>
+  </view>
+</view>
+<view wx:for="{{list}}" wx:key="*this" ontap="getDetail" data-blogid="{{item._id}}">
+<van-card
+  num="2"
+  tag="标签"
+  price="2.00"
+  desc="{{item.content}}"
+  title="{{item.title}}"
+  thumb="{{ item.cover }}"
+>
+  <view slot="footer">
+    <van-button size="mini" data-id="{{item._id}}" bind:click="update">修改</van-button>
+    <van-button size="mini" data-id="{{item._id}}" bind:click="delete">删除</van-button>
+    </view>
+</van-card>
+</view>
+
